@@ -21,3 +21,7 @@ Join us on #SSDUG Slack (https://webtasks.iamnotmyself.com/notmyself/ssdug-slack
 1. As a user I must be able to select an available [category](https://api.chucknorris.io/jokes/categories), and retrieve a Chuck Norris joke from the selected category.
 1. As a user I must be able to retrieve a random joke from the [Cuck Norris Api](https://api.chucknorris.io/)
 1. As a user I must be able to see an image of Chuck Noris or digital representation of Chuck Norris.
+
+## Bonus
+
+Independent of the requirements bonus points are given if you build us a container that builds and or hosts the web app.
