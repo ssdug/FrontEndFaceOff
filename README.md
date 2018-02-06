@@ -1,6 +1,6 @@
 # FrontEndFaceOff
 
-As discussed at the previous SSDUG meeting let's build simple web apps to compare front end frameworks. As we know that Chuck Norris is the only one capable of facing off with himself, the project should consume the Cuck Norris Api located at https://api.chucknorris.io/. The project should include documentation describing the approach taken by the team in terms of the framework their application was built in.
+As discussed at the previous SSDUG meeting let's build simple web apps to compare front end frameworks. As we know that Chuck Norris is the only one capable of facing off with himself, the project should consume the Chuck Norris Api located at https://api.chucknorris.io/. The project should include documentation describing the approach taken by the team in terms of the framework their application was built in.
 
 ## Get involved
 
