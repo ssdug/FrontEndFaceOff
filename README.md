@@ -20,7 +20,7 @@ Join us on SSDUG Slack [![Join us](https://webtasks.iamnotmyself.com/notmyself/s
 1. As a designer, the UI must be built on [Bootstrap 4.0](https://getbootstrap.com/).
 1. As a user, I must be able see the available [categories](https://api.chucknorris.io/jokes/categories) from https://api.chucknorris.io.
 1. As a user, I must be able to select an available [category](https://api.chucknorris.io/jokes/categories), and retrieve a Chuck Norris joke from the selected category.
-1. As a classic javascript developer, I want to make a [random joke](https://api.chucknorris.io/jokes/random) appear every 10 seconds on the website. 
+1. As a classic javascript developer, I want to make a [random joke](https://api.chucknorris.io/jokes/random) appear every so many (5?) seconds on the website. 
 1. As a boring developer, I want to be able to toggle the random joke train on/off with a [stylish switch](http://cdn.cssflow.com/snippets/simple-toggle-switch/preview-260.png).  (Must use a 3rd party component)
 1. As a user, I must be able to search jokes with [free text](https://api.chucknorris.io/jokes/search?query={query})
 1. As a user, I must be able to see an image of Chuck Norris or digital representation of Chuck Norris.
