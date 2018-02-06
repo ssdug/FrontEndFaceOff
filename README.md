@@ -4,8 +4,9 @@ As discussed at the previous SSDUG meeting let's build simple web apps to compar
 
 ## Get involved
 
-Please join us at our [meetup](https://www.meetup.com/ssdevelopers/) Thursday, February 8th @ 7:00pm. 
-Join us on #SSDUG Slack  [![Join us](https://webtasks.iamnotmyself.com/notmyself/ssdug-slackin/badge.svg)](https://webtasks.iamnotmyself.com/notmyself/ssdug-slackin/)
+Please join us at our [meetup](https://www.meetup.com/ssdevelopers/) Thursday, February 8th @ 7:00pm.
+
+Join us on SSDUG Slack [![Join us](https://webtasks.iamnotmyself.com/notmyself/ssdug-slackin/badge.svg)](https://webtasks.iamnotmyself.com/notmyself/ssdug-slackin/)
 
 ## Frameworks
 
