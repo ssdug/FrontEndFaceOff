@@ -17,10 +17,10 @@ Join us on SSDUG Slack [![Join us](https://webtasks.iamnotmyself.com/notmyself/s
 
 ## Requirements
 
-1. As a designer I the UI must be built on [Bootstrap 4.0](https://getbootstrap.com/).
+1. As a designer the UI must be built on [Bootstrap 4.0](https://getbootstrap.com/).
 1. As a user I must be able see the available [categories](https://api.chucknorris.io/jokes/categories) from https://api.chucknorris.io.
 1. As a user I must be able to select an available [category](https://api.chucknorris.io/jokes/categories), and retrieve a Chuck Norris joke from the selected category.
-1. As a user I must be able to retrieve a random joke from the [Cuck Norris Api](https://api.chucknorris.io/)
+1. As a user I must be able to retrieve a random joke from the [Chuck Norris Api](https://api.chucknorris.io/)
 1. As a user I must be able to see an image of Chuck Noris or digital representation of Chuck Norris.
 
 ## Bonus
