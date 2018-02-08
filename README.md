@@ -29,3 +29,10 @@ Join us on SSDUG Slack [![Join us](https://webtasks.iamnotmyself.com/notmyself/s
 Points will be given for
 * Code cleanliness
 * FUNctionality 😎
+
+## Implementations
+
+### React
+
+- [ReactNorris](https://github.com/NotMyself/ReactNorris) - [Bobby Johnson](https://twitter.com/NotMyself)
+  - Uses [React](https://reactjs.org/), [ReactRouter](https://reacttraining.com/react-router/), [axios](https://github.com/axios/axios), [reactstrap](https://reactstrap.github.io/), [react-spinners](http://www.davidhu.io/react-spinners/), [react-switch](https://github.com/yogaboll/react-switch)
