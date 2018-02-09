@@ -1,20 +1,21 @@
 <template>
-  <div class="hello">
-    <Cat>
-    </Cat>
+  <div class="adsfasdf">
+    <h2>Joke Categories</h2>
+    <ul>
+      <li v-for="cat in categories">
+        {{ cat }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import Categories from './Categories'
 export default {
-  name: 'HelloWorld',
-  components: {
-    Cat: Categories
-  },
+  name: 'Categories',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      categories: ['One', 'Two', 'Three'],
+      msg: 'test this string'
     }
   }
 }
