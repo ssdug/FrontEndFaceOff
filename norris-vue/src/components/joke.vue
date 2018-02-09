@@ -72,7 +72,8 @@
     name: 'HelloWorld',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: 'Welcome to Your Vue.js App',
+        randomJokeEnabled: true,
       }
     },
     methods: {
@@ -90,6 +91,14 @@
 
     created() {
       this.getJoke();
+
+      //Requirement #4 
+      //As a classic javascript developer, I want to make a random joke appear every so many (5?) seconds on the website.
+      setInterval(function () {
+        if(this.randomJokeEnabled){
+          this.getJoke();
+        }
+      }.bind(this), 10000); 
     },
 
     mounted() {
