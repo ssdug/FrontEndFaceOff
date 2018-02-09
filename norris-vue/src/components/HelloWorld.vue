@@ -1,16 +1,19 @@
 <template>
   <div class="hello">
     <Cat>
-    </Cat>
+    </Cat><br />
+    <njoke></njoke>
   </div>
 </template>
 
 <script>
 import Categories from './Categories'
+import joke from './joke'
 export default {
   name: 'HelloWorld',
   components: {
-    Cat: Categories
+      Cat: Categories,
+      njoke: joke
   },
   data () {
     return {
