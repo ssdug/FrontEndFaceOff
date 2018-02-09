@@ -28,7 +28,7 @@ Join us on SSDUG Slack [![Join us](https://webtasks.iamnotmyself.com/notmyself/s
 ## "Grading"
 Points will be given for
 * Code cleanliness
-* FUNctionality 😎
+* FUNctionality 😎😎
 
 ## Implementations
 
