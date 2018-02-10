@@ -1,6 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <div>
+      <toggle-button id="jokeSwitch"
+        v-model="randomJokeEnabled"
+        :width="250" :height="40"
+        :color="{checked: 'red', unchecked: 'green'}"
+        :labels="{checked: 'MORE NORRIS JOKES!!!', unchecked: 'I can&#39;t take anymore'}"
+         />
+    </div>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -124,5 +132,13 @@
 
   a {
     color: #42b983;
+  }
+
+  .vue-js-switch#jokeSwitch {
+    font-size: 16px !important;
+  }
+
+  .vue-js-switch {
+    margin: 2px;
   }
 </style>
