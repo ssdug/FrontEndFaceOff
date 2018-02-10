@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
-    <Cat>
-    </Cat><br />
     <njoke></njoke>
+    <hr />
+    <Cat>
+    </Cat>
   </div>
 </template>
 

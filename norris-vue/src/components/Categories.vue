@@ -1,22 +1,49 @@
 <template>
-  <div class="adsfasdf">
+  <div class="categories">
     <h2>Joke Categories</h2>
     <ul>
       <li v-for="cat in categories">
-        {{ cat }}
+        <toggle-button id="categorySwitch"
+          v-model="category"
+          :width="250" :height="40"
+          :color="{checked: 'red', unchecked: 'gray'}"
+          :labels="{checked: cat, unchecked: cat}"
+          />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'Categories',
   data () {
     return {
-      categories: ['One', 'Two', 'Three'],
+      categories: ['categories'],
       msg: 'test this string'
     }
+  },
+  methods: {
+    getCategories () {
+      let vm = this
+      axios.get('https://api.chucknorris.io/jokes/categories')
+        .then(function (response) {
+          console.log(response)
+          vm.categories = response.data
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    }
+  },
+
+  created () {
+    this.getCategories()
+  },
+
+  mounted () {
   }
 }
 </script>
@@ -32,9 +59,13 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 a {
   color: #42b983;
+}
+
+.vue-js-switch {
+  font-size: 2em;
 }
 </style>
