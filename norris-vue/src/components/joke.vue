@@ -6,7 +6,7 @@
         v-model="randomJokeEnabled"
         :width="250" :height="40"
         :color="{checked: 'red', unchecked: 'green'}"
-        :labels="{checked: 'MORE NORRIS JOKES!!!', unchecked: 'I can&#39;t take anymore'}"
+        :labels="{checked: 'MORE NORRIS JOKES!!!', unchecked: 'I can&quot;t take anymore'}"
          />
     </div>
     <h2>Essential Links</h2>
@@ -74,44 +74,44 @@
 </template>
 
 <script>
-  import axios from 'axios'
+import axios from 'axios'
 
-  export default {
-    name: 'HelloWorld',
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App',
-        randomJokeEnabled: true,
-      }
-    },
-    methods: {
-      getJoke() {
-        let vm = this;
-        axios.get('https://api.chucknorris.io/jokes/random')
-          .then(function (response) {
-            vm.msg = response.data.value
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      },
-    },
-
-    created() {
-      this.getJoke();
-
-      //Requirement #4 
-      //As a classic javascript developer, I want to make a random joke appear every so many (5?) seconds on the website.
-      setInterval(function () {
-        if(this.randomJokeEnabled){
-          this.getJoke();
-        }
-      }.bind(this), 10000); 
-    },
-
-    mounted() {
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App',
+      randomJokeEnabled: true
     }
+  },
+  methods: {
+    getJoke () {
+      let vm = this
+      axios.get('https://api.chucknorris.io/jokes/random')
+        .then(function (response) {
+          vm.msg = response.data.value
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    }
+  },
+
+  created () {
+    this.getJoke()
+
+    // Requirement #4
+    // As a classic javascript developer, I want to make a random joke appear every so many (5?) seconds on the website.
+    setInterval(function () {
+      if (this.randomJokeEnabled) {
+        this.getJoke()
+      }
+    }.bind(this), 10000)
+  },
+
+  mounted () {
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

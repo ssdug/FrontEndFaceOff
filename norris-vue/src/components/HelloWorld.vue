@@ -12,8 +12,8 @@ import joke from './joke'
 export default {
   name: 'HelloWorld',
   components: {
-      Cat: Categories,
-      njoke: joke
+    Cat: Categories,
+    njoke: joke
   },
   data () {
     return {
