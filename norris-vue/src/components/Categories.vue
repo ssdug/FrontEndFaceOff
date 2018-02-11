@@ -6,7 +6,7 @@
         <toggle-button id="categorySwitch"
           v-model="category"
           :width="250" :height="40"
-          :color="{checked: 'red', unchecked: 'gray'}"
+          :color="{checked: 'green', unchecked: 'gray'}"
           :labels="{checked: cat, unchecked: cat}"
           />
       </li>
