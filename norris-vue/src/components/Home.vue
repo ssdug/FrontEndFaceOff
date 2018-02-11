@@ -1,6 +1,8 @@
 <template>
-  <div class="hello">
-    <njoke></njoke>
+  <div>
+    <h2>{{msg}}</h2>
+    <img src="../assets/Chuck-Norris-HD.jpg" style="width: 400px;">
+    <rjoke></rjoke>
     <hr />
     <Cat>
     </Cat>
@@ -9,16 +11,16 @@
 
 <script>
 import Categories from './Categories'
-import joke from './joke'
+import RandomJoke from './Joke'
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   components: {
     Cat: Categories,
-    njoke: joke
+    rjoke: RandomJoke
   },
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Enlightenment! Compliments of Chuck Norris.'
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div>
+    <h2>{{ msg }}</h2>
     <div>
       <toggle-button id="jokeSwitch"
         v-model="randomJokeEnabled"
@@ -16,10 +16,10 @@
 import axios from 'axios'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Joke',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: '',
       randomJokeEnabled: true
     }
   },
