@@ -10,6 +10,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
   import Categories from './Categories'
   import RandomJoke from './Joke'
   export default {
@@ -22,6 +23,19 @@
       return {
         msg: 'Enlightenment! Compliments of Chuck Norris.'
       }
+=======
+import Categories from './Categories'
+import RandomJoke from './Joke'
+export default {
+  name: 'Home',
+  components: {
+    Cat: Categories,
+    rjoke: RandomJoke
+  },
+  data () {
+    return {
+      msg: 'Enlightenment! Compliments of Chuck Norris.'
+>>>>>>> Add bootstrap 4 to project
     }
   }
 </script>
