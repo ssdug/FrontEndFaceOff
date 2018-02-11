@@ -5,7 +5,7 @@
       <toggle-button id="jokeSwitch"
         v-model="randomJokeEnabled"
         :width="250" :height="40"
-        :color="{checked: 'red', unchecked: 'green'}"
+        :color="{checked: 'green', unchecked: 'gray'}"
         :labels="{checked: 'MORE NORRIS JOKES!!!', unchecked: 'I can not take anymore'}"
          />
     </div>
