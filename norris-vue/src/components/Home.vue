@@ -18,7 +18,7 @@ export default {
     Cat: Categories,
     rjoke: RandomJoke
   },
-  data() {
+  data () {
     return {
       msg: 'Enlightenment! Compliments of Chuck Norris.'
     }

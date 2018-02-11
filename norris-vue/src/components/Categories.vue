@@ -1,16 +1,18 @@
 <template>
   <div class="categories">
     <h2>Joke Categories</h2>
-    <ul>
-      <li v-for="cat in categories">
-        <toggle-button id="categorySwitch"
-          v-model="category"
-          :width="250" :height="40"
-          :color="{checked: 'green', unchecked: 'gray'}"
-          :labels="{checked: cat, unchecked: cat}"
-          />
-      </li>
-    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg" v-for="cat in categories">
+          <toggle-button id="categorySwitch"
+            v-model="category"
+            :width="250" :height="40"
+            :color="{checked: 'green', unchecked: 'gray'}"
+            :labels="{checked: cat, unchecked: cat}"
+            />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
