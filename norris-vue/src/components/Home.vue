@@ -1,8 +1,8 @@
 <template>
   <div>
     <coolVideo></coolVideo>
-    <h2>{{msg}}</h2>
-    <img src="../assets/Chuck-Norris-HD.jpg" style="width: 400px;">
+    <h2 class="title">{{msg}}</h2>
+    <img class="image" src="../assets/Chuck-Norris-HD.jpg" style="width: 400px;">
     <rjoke></rjoke>
     <hr />
     <Cat>
@@ -38,14 +38,14 @@ export default {
     font-weight: normal;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
+  .title {
+    /*padding-bottom: 10px;*/
+    margin: 0px 0 10px 0;
   }
 
-  li {
-    display: inline-block;
-    margin: 0 10px;
+  .image {
+    width: 400px;
+    margin: 10px 0 10px 0;
   }
 
   a {

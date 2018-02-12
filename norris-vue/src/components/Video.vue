@@ -67,7 +67,7 @@ export default {
     let vm = this
 
     if (vm.videoEnabled) {
-      setTimeout(function () { vm.removeVideoElement() }, 12600)
+      setTimeout(function () { vm.removeVideoElement() }, 12800)
     } else {
       vm.removeVideoElement()
     }

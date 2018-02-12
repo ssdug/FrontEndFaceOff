@@ -1,13 +1,19 @@
 <template>
   <div>
-    <h2>{{ msg }}</h2>
+    <div class="joke container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>{{ msg }}</h2>
+        </div>
+      </div>
+    </div>
     <div>
       <toggle-button id="jokeSwitch"
-        v-model="randomJokeEnabled"
-        :width="250" :height="40"
-        :color="{checked: 'green', unchecked: 'gray'}"
-        :labels="{checked: 'MORE NORRIS JOKES!!!', unchecked: 'I can not take anymore'}"
-         />
+          v-model="randomJokeEnabled"
+          :width="250" :height="40"
+          :color="{checked: 'green', unchecked: 'gray'}"
+          :labels="{checked: 'MORE NORRIS JOKES!!!', unchecked: 'I can not take anymore'}"
+          />
     </div>
   </div>
 </template>
@@ -23,6 +29,7 @@ export default {
       randomJokeEnabled: true
     }
   },
+
   methods: {
     getJoke () {
       let vm = this
@@ -59,14 +66,9 @@ export default {
     font-weight: normal;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
+  .joke {
+    padding: 15px;
+    background-color: #222;
   }
 
   a {
