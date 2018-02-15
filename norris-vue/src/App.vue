@@ -13,7 +13,8 @@ export default {
 <style>
   #app {
     margin: 0;
-    padding-top: 60px;
+    padding: 10px;
+    height: 100%;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -21,5 +22,4 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
 </style>

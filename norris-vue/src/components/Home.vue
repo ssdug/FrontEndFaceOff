@@ -1,11 +1,25 @@
 <template>
   <div>
     <coolVideo></coolVideo>
+    <div class="toggleRow">
+      <div class="rowItem">Local Mode - </div>
+      <div class="rowItem">
+        <div class="toggleButton">
+          <div>Off&nbsp;</div>&nbsp;
+          <toggle-button id="testingSwitch"
+                         v-model="testing"
+                         :width="40" :height="20"
+                         :color="{checked: 'green', unchecked: 'gray'}" />
+          &nbsp;<div>&nbsp;On</div>
+        </div>
+      </div>
+    </div>
+
     <h2 class="title">{{msg}}</h2>
-    <img class="image" src="../assets/Chuck-Norris-HD.jpg" style="width: 400px;">
-    <rjoke></rjoke>
+    <img class="image" src="../assets/Chuck-Norris-HD.jpg">
+    <rjoke v-bind:testing="testing"></rjoke>
     <hr />
-    <Cat>
+    <Cat v-bind:testing="testing">
     </Cat>
   </div>
 </template>
@@ -25,10 +39,10 @@ export default {
 
   data () {
     return {
-      msg: 'Enlightenment! Compliments of Chuck Norris.'
+      msg: 'Chuck Norris Vue(s)',
+      testing: true
     }
   }
-
 }
 </script>
 
