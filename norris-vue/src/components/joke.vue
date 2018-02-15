@@ -58,27 +58,13 @@ export default {
   methods: {
     jokeOn () { // method will determine if call to api should be made
       let vm = this
-      if (vm.randomJokeEnabled) { // toggle must be on
-        // if (vm.selectedCategories.length > 0) { // a category must be selected
+      if (vm.randomJokeEnabled) { // toggle must be on, maybe check for at least one category selected
         return true
-        // } else {
-        //   vm.msg = 'Pick a Category below'
-        // }
       }
-      // return false
-    },
-    getRandomCategory () {
-      let vm = this
-      if (vm.selectedCategories.length > 0) {
-        var randomNumber = Math.floor(Math.random() * vm.selectedCategories.length)
-        vm.randomCategory = vm.selectedCategories[randomNumber]
-      } else {
-        vm.randomCategory = ''
-      }
+      return false
     },
     getJoke () {
       let vm = this
-      // vm.getRandomCategory()  // get a random category from the selected items
       if (vm.testing) {
         vm.getMockJoke()
       } else {

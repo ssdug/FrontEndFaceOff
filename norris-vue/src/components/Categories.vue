@@ -12,6 +12,8 @@
               />
       </div>
     </div>
+    <div>{{passedCategories}}
+</div>
   </div>
 </template>
 
@@ -31,14 +33,16 @@ export default {
       categories: {},
       msg: 'test this string',
       switchWidth: 200,
-      switchHeight: 40
+      switchHeight: 40,
+      passedCategories: []
     }
   },
 
   watch: {
-    categories: {  // watch the categories for changes; call getSelectedCategories to notify the parent  
+    categories: { // watch the categories for changes; call getSelectedCategories to notify the parent
       handler: function (val, oldVal) {
-        this.getSelectedCategories()
+        this.passedCategories = this.getSelectedCategories()
+        this.$emit('selectedCategories-changed', this.passedCategories) // notify the parent that the object has changed
       },
       deep: true // when watching an object properties use the handler and go deep
     }
@@ -54,6 +58,7 @@ export default {
       } else {
         data = vm.getAxiosCategories()
       }
+      // new up a collection of Category objects
       vm.categories = data.map(function (obj) { return new Category(obj, false) })
     },
     getMockCategories () {
@@ -76,8 +81,7 @@ export default {
       let selectedCategories = vm.categories.filter(function (el) {
         return el.Include === true
       })
-      var categoryStrings = selectedCategories.map(a => a.Name)
-      this.$emit('selectedCategories-changed', categoryStrings) // this will notify the parent that the object has changed
+      return selectedCategories.map(a => a.Name) // just want an array of category names
     }
   },
 
