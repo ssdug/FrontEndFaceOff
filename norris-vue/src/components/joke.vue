@@ -8,7 +8,7 @@
       </div>
       <div class="row">
         <div class="offset-md-10 col-md-2">
-          {{ randomCategory }}
+          <!-- {{ randomCategory }}  -->{{selectedCategories}}
         </div>
       </div>
     </div>
